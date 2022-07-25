@@ -1,0 +1,40 @@
+.comment {
+  margin : 8px;
+  padding: 8px;
+  display: flex;
+}
+.jerry {
+  width: 150px;
+  height: 150px;
+  border-radius: 25px;
+  
+}
+.user_info{
+  display: flex;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.user_info_name {
+  font-weight: bold;
+  color: #282c34;
+  line-height: 50px;
+  padding-left: 30%;
+  padding-right: 30%;
+  color: skyblue;
+  font-size: 30px;
+}
+.comment-txt {
+  padding: 15px;
+  background-color: #282c34;
+  color: rgb(196, 227, 254);
+  border-radius: 15px;
+}
+.container {
+  margin-left: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.comment-date{
+
+}
