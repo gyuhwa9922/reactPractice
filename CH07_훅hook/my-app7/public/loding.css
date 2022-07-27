@@ -1,0 +1,37 @@
+.loading span{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    color : #222;
+    font-size: 30px;
+    animation: loading 0.2s linear infinite;
+    padding: 100px;
+    /*animation으로 loading을 불러와
+     1초동안 실행 linear은 부드럽게 
+     infinite는 무한*/
+}
+.loading span{
+    animation-delay: 0s;
+    background-color: rgb(255, 255, 255);
+    /*애니메이션 딜레이가 없음(기본값)*/
+}
+@keyframes loading{
+    0% {
+        opacity: 0; /*투명도*/
+        transform: scale(0.5); /* 확대 , 축소*/
+        border-radius: 50%;
+        background-color: white;
+    }
+    50% {
+        opacity: 1; /*투명도*/
+        transform: scale(1.0); /* 확대 , 축소*/
+        border-radius: 20%;
+        background-color: rgb(219, 255, 111);
+    }
+    100% {
+        opacity: 0; /*투명도*/
+        transform: scale(0.5); /* 확대 , 축소*/
+        border-radius: 50%;
+        background-color: rgb(139, 199, 248);
+    }
+}
