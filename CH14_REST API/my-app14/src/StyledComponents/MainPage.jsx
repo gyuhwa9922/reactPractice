@@ -10,18 +10,26 @@ import styled from 'styled-components'
  background: crimson;
  border-radius: 50%;
 `
-const $btn = styled.button`
- border-radius: 5px;
- cursor: pointer;
- background-color: #222;
- color: white;
+// const $btn = styled.button`
+//  border-radius: 5px;
+//  cursor: pointer;
+//  background-color: #222;
+//  color: white;
+// `
+const SmartButton = styled.button`
+  color: ${props => props.dark ? "white" : "dark"};
+  background-color: ${props => props.dark ? "black" : "white"};
+  border: 1px solid crimson;
+  padding: 3px;
 `
+
+
 function MainPage(props) {
 
   return (
     <Wrapper >
     <div>
-      <$btn> gigigigi </$btn>
+    <SmartButton dark>Black Button</SmartButton>
     </div>
     </Wrapper>
   );
